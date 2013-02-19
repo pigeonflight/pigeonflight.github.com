@@ -1,7 +1,10 @@
 echo "activating the web2py c9 installer ..."
 wget http://www.web2py.com/examples/static/web2py_src.zip -O web2py_src.zip
 unzip -q web2py_src.zip
-echo "python web2py/web2py.py -i $IP -p $PORT; echo 'visit your site at http://$C9_PROJECT.$C9_USER.c9.io'" > ~/bin/start_web2py
+
+echo "echo 'visit your site at http://$C9_PROJECT.$C9_USER.c9.io'" > ~/bin/start_web2py
+echo "python web2py/web2py.py -i $IP -p $PORT" >> ~/bin/start_web2py
+
 chmod +x ~/bin/start_web2py
 
 echo "-------------------------"
